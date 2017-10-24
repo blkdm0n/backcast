@@ -12,5 +12,5 @@ var SearchView = Backbone.View.extend({
 
 });
 
-var search = new SearchView();
-search.initialize();
+//var search = new SearchView();
+// search.initialize();
