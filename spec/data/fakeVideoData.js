@@ -63,7 +63,7 @@ window.fakeVideoData = [
     },
     snippet: {
       title: 'Framework fatigue and you',
-      description: 'JS guru, @McKringleberry teaches tips and tricks for managing JS framework fatigue',
+      description: 'JS guru, @McKringlebesrry teaches tips and tricks for managing JS framework fatigue',
       thumbnails: {
         default: {
           url: 'https://facebook.github.io/react/img/logo.svg',
@@ -72,3 +72,5 @@ window.fakeVideoData = [
     }
   }
 ];
+
+
