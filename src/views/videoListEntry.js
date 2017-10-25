@@ -4,13 +4,7 @@ var VideoListEntryView = Backbone.View.extend({
     this.render();
   },
   render: function(collection) {
-    exampleVideoData.forEach(function(value) {
-      console.log(value.snippet.title);
-      $('.video-list-entry-title').html(value.snippet.title);
-      
-    });
-    this.$el.html(this.template());
-    return this;
+
   },
 
   template: templateURL('src/templates/videoListEntry.html')
