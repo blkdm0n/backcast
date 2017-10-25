@@ -3,7 +3,12 @@ var VideoListEntryView = Backbone.View.extend({
   initialize: function() {
     this.render();
   },
-  render: function() {
+  render: function(collection) {
+    exampleVideoData.forEach(function(value) {
+      console.log(value.snippet.title);
+      $('.video-list-entry-title').html(value.snippet.title);
+      
+    });
     this.$el.html(this.template());
     return this;
   },
@@ -19,7 +24,10 @@ var VideoListEntryView = Backbone.View.extend({
   //add the thumbnail
   //add the video title
   //add the video description
-  
+
+//thumbnail = exampleVideoData[i].snippet.thumbnails.default.url
+//title = exampleVideoData[i].snippet.title
+//description = exampleVideoData
 
 
 
