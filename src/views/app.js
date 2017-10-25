@@ -11,13 +11,14 @@ var AppView = Backbone.View.extend({
 
 
   render: function() {
+
     this.$el.html(this.template());
+    
     //in our inital load we want views in the render method
-    //we have to tell our templates WHERE to render
+    //we have to tell our templates WHERE to render (order is important)
     new SearchView({el: '.search'}).render();
     new VideoPlayerView({el: '.player'}).render();
     new VideoListView({el: '.list'}).render();
-    new VideoListEntryView({el: '.video-list-entry'}).render();
     return this;
   },
   

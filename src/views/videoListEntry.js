@@ -1,27 +1,19 @@
 var VideoListEntryView = Backbone.View.extend({
 
   initialize: function() {
-    this.render();
+    //this.render();
+    //console.log(this.model);
   },
-  render: function(collection) {
-
+  render: function() {
+    this.$el.html(this.template(this.model.attributes));
+    
+    return this;
   },
 
   template: templateURL('src/templates/videoListEntry.html')
 
 });
 
-
-//what do we need to do?
-
-//get our video data
-  //add the thumbnail
-  //add the video title
-  //add the video description
-
-//thumbnail = exampleVideoData[i].snippet.thumbnails.default.url
-//title = exampleVideoData[i].snippet.title
-//description = exampleVideoData
 
 
 
